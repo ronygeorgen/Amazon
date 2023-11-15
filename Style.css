@@ -1,0 +1,777 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(195, 185, 185) ;
+}
+#wrapper-div
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 70px;
+    background-color: #131921;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+}
+#logo-div
+{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 10%;
+    justify-content: center;
+    align-items: center;
+}
+#address-div
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10%;
+    align-items: center;
+    justify-content: center;
+
+}
+#parent-search-div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 56%;
+}
+#language-div
+{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 5%;
+    align-items: center;
+    justify-content: center;
+}
+#account-div
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 5%;
+    align-items: center;
+    justify-content: center;
+}
+#order-div
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 5%;
+    align-items: center;
+    justify-content: center;
+}
+#cart-div
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 4%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+}
+#my_image
+{
+    width: 90px;
+    margin-top: 5%;
+}
+a
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+    
+}
+.deliver
+{
+    justify-content: center;
+    width: 100%;
+    font-size: small;
+    opacity: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+#below-address
+{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 30%;
+   
+}
+#location-icon-div
+{
+    
+    
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#location-name-div
+{
+    padding: 5px; 
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-family: inherit;
+    font-weight: 500;
+    color: white;
+}
+#form-div
+{
+    flex-basis: 100%;
+    background-color: #ffffff;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    
+   
+
+}
+#form
+{
+    width: 100%;
+   
+    
+}
+#search-form-navbar
+{   
+    width: 91%;
+    min-height: 30px;
+    border-left: #fff;
+    border-top: #fff;
+    border-right: #fff;
+    border-bottom: #fff;
+    
+    
+}
+.fa-solid
+{
+    margin-top: 5px;
+    margin-left: 10px;
+    color: white;
+    
+}
+#drop-down-btn
+{
+    margin-top: 0px;
+    width: 32px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-left: #fff;
+    border-top: #fff;
+    border-right: #fff;
+    border-bottom: #fff;
+    
+    
+}
+#search-btn
+{
+  width: 36px;
+  height: 30px;
+  margin-top: 1px;
+  border-color: yellow;
+  background-color: #bf7d19;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  border-left: #fff;
+  border-top: #fff;
+  border-right: #fff;
+  border-bottom: #fff;
+}
+.dropbtn {
+    
+    padding: 0px;
+    font-size: 14px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: #131921;
+
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  #navbar2-div
+  {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 39px;
+    background-color: #232f3e;
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+    z-index: 0;
+    margin-top: 66px;
+  }
+  #menu-div
+  {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 7%;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  #menu-div p{
+    padding-left: 3px;
+    
+  }
+  #item1-div
+  {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 7%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #item2-div
+  {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 3%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #item3-div
+  {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 5%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #item4-div
+  {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 5%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #item5-div
+  {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 5%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #item6-div
+  {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 8%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #item7-div
+  {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 14%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #item8-div
+  {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 10%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #item9-div
+  {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 7%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #item10-div
+  {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 29%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #content
+  {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    min-height: 30px;
+    margin: auto; 
+    
+  }
+  #cover-image{
+    /* background-color: #007185; */
+      background-image:linear-gradient( to bottom, transparent, rgb(195, 185, 185) 99% ), url('ammazon.jpg');
+      background-size: cover;  /* Adjust as needed */
+      background-position: center center;  /* Adjust as needed */
+      height: 100vh;
+  }
+  #parent-content1-div
+  {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 30px;
+
+
+  }
+  #parent-content2-div
+  {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 30px;
+
+
+  }
+  #cont-1
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
+    font-size: 30px;
+    background-color: #fff;
+  }
+  #cont-2
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
+    font-size: 30px;
+    background-color: #fff;
+    
+  }
+  #cont-3
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
+    font-size: 30px;
+    background-color: #fff;
+  }
+  #cont-4-final
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
+    font-size: 30px;
+    background-color: #fff;
+    
+  }
+  #cont-4
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
+    font-size: 30px;
+    background-color: #fff;
+    height: fit-content;
+  }
+  #special-image{
+    display: flex;
+    flex-basis: 40%;
+    margin: auto;
+    height: 97px;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/ChromeBook_DiwaliART2023/115x1151._CB577626255_.jpg')  no-repeat;
+    
+  }
+  .add a{
+    text-decoration: none;
+    color: #007185;
+    margin-top: 8px!important;
+  }
+  #outer-layer
+  {
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 3px;
+    padding-right: 5%;
+    
+  }
+  #inner-layer1
+  {
+    display: flex;
+    flex-direction: row;
+    min-height: 10px;
+    margin: 0;
+    justify-content: space-between;
+    margin-top: 5px;
+    
+  }
+  #inner-layer-cont1
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/Oct/Jupiter23/Kitchen/QC_PC_186x116_1._SY116_CB573889351_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-final-cont
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/Central/P3/CEPC/R01_Cepc_Desktop_CC_1x._SY304_CB575146312_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    height: 352px;
+    cursor: pointer;
+  }
+  #inner-layer-cont2
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/Oct/Jupiter23/Kitchen/QC_PC_186x116_7._SY116_CB573889443_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer2
+  {
+    display: flex;
+    flex-direction: row;
+    min-height: 90px;
+
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  #inner-layer-cont3
+  {
+    display: flex;
+    color: wheat;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/Oct/Jupiter23/Kitchen/QC_PC_1_1x._SY116_CB573884255_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont4
+  {
+    display: flex;
+    color: wheat;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2023/Jupiter23/Phase3/Desktop_QC/PB/2_1x._SY116_CB575198763_.png') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #tag1{
+    font-size: 10px!important;
+    margin-top: 150px;
+    font-weight: 600;
+    color: #4f5353!important;
+    font-family: Arial,sans-serif;
+  }
+  #tag-final{
+    font-size: 10px!important;
+    
+    font-weight: 600;
+    color: #4f5353!important;
+    font-family: Arial,sans-serif;
+  }
+  #tag-final a{
+    text-decoration: none;
+    color: #007185;
+    margin-top: 8px!important;
+  }
+  #inner-layer-cont1-part2
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/Media/Jupiter/childrens-book-1x._SY116_CB574308419_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont2-part2
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/Media/Jupiter/kids-toys-1x._SY116_CB574308419_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  #inner-layer-cont3-part2
+  {
+    display: flex;
+    color: wheat;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/Media/Jupiter/Fairy-lights-1x._SY116_CB574308419_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont4-part2
+  {
+    display: flex;
+    color: wheat;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/Media/Jupiter/Kidswear-1x._SY116_CB574308419_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont1-part3
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/Jup/Phase3/BTF/PCQC/Rev/Saree-186-116-min._SY116_CB575146091_.png') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont2-part3
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/Jup/Phase3/BTF/PCQC/Rev/WF-186-116-min._SY116_CB575146091_.png') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  #inner-layer-cont3-part3
+  {
+    display: flex;
+    color: wheat;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/Jup/Phase3/BTF/PCQC/Rev/B-186-116-min._SY116_CB575146091_.png') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont4-part3
+  {
+    display: flex;
+    color: wheat;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/Event/Gateway/Jup/Phase3/BTF/PCQC/Rev/Jew-186-116-min._SY116_CB575146091_.png') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #outer-layer-special {
+    margin-top: 11px;
+    margin-left: 10px;
+}
+#inner-layer-cont1-end
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/PCS_PC_QC_1X._SY116_CB575171519_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont2-end
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/Gifting_PC_QC_1X._SY116_CB575263820_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont3-end
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/Diwali_PC_QC_1X._SY116_CB575171213_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont4-end
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/Dhanteras_PC_QC_1X._SY116_CB575220159_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont1-end2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/Phase-3-PC-QC_02_1x._SY116_CB575256030_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont2-end2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/Phase-3-PC-QC__01_1x._SY116_CB575256030_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont3-end2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/Phase-3-PC-QC_03_1x._SY116_CB575256030_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont4-end2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/Phase-3-PC-QC_04_1x._SY116_CB575256030_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont1-end3{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/Meghana/Phase3/PC/Desktop_QuadCard_186x116_01._SY116_CB575166656_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont2-end3{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/Meghana/K8/Desktop_QuadCard_186x116._SY116_CB575152829_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont3-end3{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/Meghana/K8/Desktop_QuadCard_186x116_01._SY116_CB575152829_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #inner-layer-cont4-end3{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    background: url('https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/Meghana/Phase3/PC/Desktop_QuadCard_186x116_04._SY116_CB575166656_.jpg') center no-repeat;
+    background: cover;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  #footer{
+    background-color: #232f3e;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 30%;
+  }
+  .name{
+    font-size: medium;
+    color: white;
+    margin-left: 45%;
+    margin-top: 1%;
+  }
